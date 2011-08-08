@@ -42,6 +42,21 @@
 		<div id="container">
 			<div id="topnav" class="topnav"><a href="login" class="signin"><span>Sign in</span></a></div>
 			<fieldset id="signin_menu">
+				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+				  <p><%= f.label :email %><br />
+				  <%= f.email_field :email %></p>
+
+				  <p><%= f.label :password %><br />
+				  <%= f.password_field :password %></p>
+
+				  <% if devise_mapping.rememberable? -%>
+				    <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+				  <% end -%>
+
+				  <p><%= f.submit "Sign in" %></p>
+				<% end %>
+
+				<%= render :partial => "devise/shared/links" %>
 				<form method="post" id="signin" action="#">
 					<p>
 						<label for="username">User E-mail</label>
@@ -61,10 +76,8 @@
 			</fieldset>
 			<div id="user_nav">
 				<% if user_signed_in? %>
-				    Signed in as <%= current_user.email %>. Not you?
+				    Signed in as <%= current_user.email %>.
 				    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-				  <% else %>
-				    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
 				  <% end %>
 			</div>
 			<p class="notice"><%= notice %></p>
