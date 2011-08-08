@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"> 
+<html>
+<head>
+  <title>Nerdbase</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<ul id="navigation">
+        <li class="home"><a href="#" title="Home"></a></li>
+        <li class="about"><a href="#" title="About"></a></li>
+        <li class="search"><a href="#" title="Search"></a></li>
+    </ul>
+
+	<div id="header">
+		<div class="center">
+			<img src="/assets/nerdbase.png" style="padding-top:5em;">
+			<img src="/assets/nerdbase3_new.png" style="padding-bottom:1em;">
+		</div>
+		<div class="center" id="menu">
+			<ul>
+				<li class="current"><a href="index_new.html">Home</a></li>
+		  		<li><a href="people_new.html">Nerds</a></li>
+		    	<li><a href="projects_new.html">Ideas</a></li>
+		    	<li><a href="blog_new.html">Blogs</a></li>
+		    	<li><a href="about_new.html">About</a></li>
+			</ul>
+		</div>
+	</div>
+
+<%= yield %>
+
+</body>
+</html>
