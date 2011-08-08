@@ -239,11 +239,16 @@ ul#navigation .search a{
 
 #submitButton {
   float:left;
+  width:83px;
+  height:36px;
   cursor:pointer;
   background-color:#F5F5F5;
-  padding:4px 6px 6px;
+  border:1px solid silver;
+  padding:4px 10px 5px;
+  margin:0 5px 0 0;
   text-decoration:none;
   font-weight:bold;
+  font-size:14px;
   color:#000;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
