@@ -239,22 +239,29 @@ ul#navigation .search a{
 
 #submitButton {
   float:left;
-  width:83px;
-  height:36px;
   cursor:pointer;
   background:#F5F5F5;
-  border:1px solid silver;
-  text-shadow:0 -1px 0 #eee;
-  color:#000;
-  padding:4px 10px 5px;
-  font-size:14px;
-  margin:0 5px 0 0;
+  padding:4px 6px 6px;
+  text-decoration:none;
   font-weight:bold;
-
+  color:#000;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
+  *padding:4px 12px 6px;
   behavior: url(/assets/PIE.htc);
+
+/*
+  width:83px;
+  height:36px;
+
+  border:1px solid silver;
+
+  padding:4px 10px 5px;
+  font-size:14px;
+  margin:0 5px 0 0;
+*/
+
 }
 
 
