@@ -251,11 +251,9 @@ ul#navigation .search a{
   margin:0 5px 0 0;
   font-weight:bold;
 
-
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
-  *padding:4px 12px 6px;
   behavior: url(/assets/PIE.htc);
 }
 
