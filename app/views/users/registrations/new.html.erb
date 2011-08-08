@@ -3,44 +3,44 @@
 		<div id="form-container" style="width:630px;">
 	    	<h1>Регистрация</h1>
 	    	<h2>Drop us a line and we will get back to you</h2>
-	    	<form id="form4" action="/" method="post">
-				<fieldset>
-					<p class="first">
-						<label for="name">Login:</label>
-						<input type="text" name="name" id="name" size="30" />
-					</p>
-					<p>
-						<label for="email">Имя:</label>
-						<input type="text" name="email" id="email" size="30" />
-					</p>
-					<p>
-						<label for="web">Фамилия:</label>
-						<input type="text" name="web" id="web" size="30" />
-					</p>
-					<p>
-						<label for="web">Пол:</label>
-						<input type="radio" name="group2" value="Water" checked style="margin-left:.2em;"> Мужской
-						<input type="radio" name="group2" value="Wine" style="margin-left:1em;"> Женский
-					</p>
-					<p>
-						<label for="web">E-mail:</label>
-						<input type="text" name="web" id="web" size="30" />
-					</p>
-					<p>
-						<label for="web">Пароль:</label>
-						<input type="text" name="web" id="web" size="30" />
-					</p>
-					<p>
-						<label for="web">Повторите пароль:</label>
-						<input type="text" name="web" id="web" size="30" />
-					</p>
-					<p class="code">
-						<label for="web">Введите код:</label>
-						<input type="text" name="web" id="web" size="30" />
-					</p>
-					<p class="submit"><input class="signin_submit" value="Register" tabindex="6" type="submit"></p>
-				</fieldset>
-			</form>
+	
+			<%= devise_error_messages! %>
+			
+			<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+				
+			  <fieldset>
+			  	<p class="first"><%= f.label :email %>
+			  	<%= f.email_field :email %></p>
+
+			  	<p><%= f.label :password %>
+			  	<%= f.password_field :password %></p>
+			
+			  	<p><%= f.label :password_confirmation %>
+			  	<%= f.password_field :password_confirmation %></p>
+			
+				<p>
+					<label for="email">Имя:</label>
+					<input type="text" name="email" id="email" size="30" />
+				</p>
+				<p>
+					<label for="web">Фамилия:</label>
+					<input type="text" name="web" id="web" size="30" />
+				</p>
+				
+				<p>
+					<label for="web">Пол:</label>
+					<input type="radio" name="group2" value="Water" checked style="margin-left:.2em;"> Мужской
+					<input type="radio" name="group2" value="Wine" style="margin-left:1em;"> Женский
+				</p>
+				
+				<p class="code">
+					<label for="web">Введите код:</label>
+					<input type="text" name="web" id="web" size="30" />
+				</p>
+
+			  	<p class="submit"><%= f.submit "Sign up", :class => "signin_submit" %></p>
+			  </fieldset>
+			<% end %>
 	    </div>
 	</div>
 	<div id="news_block">
@@ -98,20 +98,3 @@
 	</div>
 </div>
 <div class="clear"></div>
-
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
-
-  <p><%= f.label :password %><br />
-  <%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.submit "Sign up" %></p>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>

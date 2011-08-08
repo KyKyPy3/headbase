@@ -658,25 +658,25 @@ h4 {
   padding-bottom:10px;
 }
 
-#form4{
+#user_new {
   margin:1em 0;
 }
 
-#form4 .first{
+#user_new .first{
   padding-bottom:3em;
 }
 
-#form4 .code{
+#user_new .code{
   padding-top:3em;
 }
 
-#form4 h3{
+#user_new h3{
   margin:0 20px;
   height:28px;
   text-indent:-8000px;
 }
 
-#form4 fieldset{
+#user_new fieldset{
   margin:0;
   padding:0;
   border:none;
@@ -684,18 +684,38 @@ h4 {
   font-family: sans-serif; font-size: 14px; color: gray;
 }
 
-#form4 p{margin:.5em 20px;}
-#form4 label{
+#error_explanation {
+	margin:0;
+	padding:0;
+	padding-bottom:2em;
+	margin-left:1em;
+}
+
+#error_explanation h2 {
+  margin:0 20px;
+  height:28px;
+  font-size:14px;
+  color:red;
+  border:none;
+  padding:0;
+}
+
+#error_explanation ul {
+  margin-left: 5em;
+}
+
+#user_new p{margin:.5em 30px;}
+#user_new label{
   float: left; 
   clear: left; 
   margin: 5px 15px 0 0; 
-  width: 170px;
+  width: 200px;
   text-align: right; font-size: 14px; color: gray; 
   text-transform: uppercase; 
   text-shadow: 0px 1px 0px #f2f2f2;
 }
 
-#form4 input[type=text], #form4 textarea{
+#user_new input[type=text], #user_new input[type=password],#user_new input[type=email], #user_new textarea{
   width:302px;
   border:1px solid #dfdfdf;
   background:#fff;
@@ -706,7 +726,7 @@ h4 {
   behavior: url(javascript/PIE.htc);
 }
 
-#form4 input[type=radio]{
+#user_new input[type=radio]{
   border:1px solid #dfdfdf;
   background:#fff;
   padding:5px 3px;
@@ -715,17 +735,17 @@ h4 {
   font-family: sans-serif; font-size: 16px; color: black;
 }
 
-#form4 textarea{
+#user_new textarea{
   height:125px;
   overflow:auto;
 }
 
-#form4 p.submit{
+#user_new p.submit{
   padding-top:2em;
   text-align:center;
 }
 
-#form4 .signin_submit {
+#user_new .signin_submit {
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
   background:#4682B4;
@@ -739,11 +759,20 @@ h4 {
   behavior: url(javascript/PIE.htc);
 }
 
-#form4 .signin_submit::-moz-focus-inner {
+#user_new .signin_submit::-moz-focus-inner {
   padding:0;
   border:0;
 }
-#form4 .signin_submit:hover, .signin_submit:focus {
+#user_new .signin_submit:hover, .signin_submit:focus {
   background-position:0 -5px;
   cursor:pointer;
+}
+
+.field_with_errors {
+	margin:.5em 30px;
+	padding:0;
+}
+
+.field_with_errors input {
+  border:1px solid red;
 }
