@@ -515,10 +515,13 @@ div.events {
 
 .date {
   position: relative;
-  width: 70px;
+  width:63px;
+  height:63px; 
   font-family: Georgia, serif;
   color: #999;
+  float:left;
   margin: 0 auto;
+/* display:block;*/
 }
 
 .day, .month, .year {
@@ -546,35 +549,50 @@ div.events {
 }
 
 .footer {
-	background-color:#252525;
-	width:100%;
-	padding-top:1em;
-	padding-bottom:3em;
-	margin-top:3em;
+  background-color:#252525;
+  width:100%;
+  padding-top:1em;
+  padding-bottom:3em;
+  margin-top:3em;
 }
 
 .footer .menu {
-	margin: 0px auto;
-	width:1000px;
-	text-align:center;
+  margin: 0px auto;
+  width:1000px;
+  text-align:center;
 }
 
 .footer a {
-	color:white;
-	text-decoration:none;
+  color:white;
+  text-decoration:none;
 }
 
 .footer a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer .menu b {
-	padding-left:.5em;
-	padding-right:.5em;
-	color:silver;
+  padding-left:.5em;
+  padding-right:.5em;
+  color:silver;
 }
 
 .footer .copyright {
-	padding-top:.1em;
-	text-align:center;
+  padding-top:.1em;
+  text-align:center;
+}
+
+h5 {
+  font-size:1em;
+  line-height:1.38em;
+}
+h5,
+h5 a {
+  color:#222226;
+}
+h5 a {
+  text-decoration:none;
+}
+h5 a:hover {
+  text-decoration:underline;
 }
