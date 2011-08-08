@@ -16,7 +16,7 @@
 
 	<div id="header">
 		<div class="center">
-			<img src="/assets/nerdbase.png" style="padding-top:5em;">
+			<img src="/assets/nerdbase.png">
 			<img src="/assets/nerdbase3_new.png" style="padding-bottom:1em;">
 		</div>
 		<div class="center" id="menu">
@@ -29,6 +29,39 @@
 			</ul>
 		</div>
 	</div>
+	
+	<div class="center">
+		<div style="width:650px;float:left;">
+			<form id="searchForm" method="post">
+				<fieldset>
+					<input id="s" type="text" />
+					<input type="submit" value="Submit" id="submitButton" />
+				</fieldset>
+			</form>
+		</div>
+		<div id="container">
+			<div id="topnav" class="topnav"><a href="login" class="signin"><span>Sign in</span></a></div>
+			<fieldset id="signin_menu">
+				<form method="post" id="signin" action="#">
+					<p>
+						<label for="username">User E-mail</label>
+						<input id="username" name="username" value="" title="username" tabindex="4" type="text">
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input id="password" name="password" value="" title="password" tabindex="5" type="password">
+					</p>
+					<p class="remember">
+						<input id="signin_submit" value="Sign in" tabindex="6" type="submit">
+						<input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+						<label for="remember">Remember me</label>
+					</p>
+					<p class="forgot"><a href="#" id="resend_password_link">Forgot your password?</a></p>
+				</form>
+			</fieldset>
+		</div>
+	</div>
+	<div class="clear"></div>
 
 <%= yield %>
 
