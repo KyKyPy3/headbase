@@ -103,7 +103,10 @@ ul#navigation .search a{
   -webkit-border-top-left-radius:8px;
   -webkit-border-top-right-radius:8px;
   -moz-border-radius:8px 8px 0 0;
-  border-radius:8px;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
   behavior: url(/assets/PIE.htc);
 }
 
