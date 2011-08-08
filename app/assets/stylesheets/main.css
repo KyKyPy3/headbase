@@ -240,7 +240,7 @@ ul#navigation .search a{
 #submitButton {
   float:left;
   cursor:pointer;
-  background:#F5F5F5;
+  background-color:#F5F5F5;
   padding:4px 6px 6px;
   text-decoration:none;
   font-weight:bold;
