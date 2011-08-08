@@ -1,5 +1,6 @@
 Nerdbase::Application.routes.draw do
   get "main/index"
+  get "main/register"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
