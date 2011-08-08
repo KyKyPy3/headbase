@@ -427,3 +427,21 @@ a.signin.menu-open span {
   background-position:0 -5px;
   cursor:pointer;
 }
+
+div.events {
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  background: #F5F5F5;
+  border: 1px solid #ddd;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 3px 10px 0;
+  position: relative;
+  text-align: left;
+  padding: 2em;
+  margin-right:5em;
+  margin-bottom:1em;
+  behavior: url(javascript/PIE.htc);
+}
