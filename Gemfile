@@ -18,10 +18,6 @@ end
 
 gem 'jquery-rails'
 
-gem 'execjs'
-
-gem 'therubyracer'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -38,4 +34,10 @@ end
 
 group :test do
   gem 'rspec-rails'
+end
+
+group :production do
+  gem 'execjs'
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'pg'
 end
