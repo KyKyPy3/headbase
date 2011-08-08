@@ -512,3 +512,35 @@ div.events {
 .extra-wrap {
   overflow:hidden;
 }
+
+.date {
+  position: relative;
+  width: 70px;
+  font-family: Georgia, serif;
+  color: #999;
+  margin: 0 auto;
+}
+
+.day, .month, .year {
+  position: absolute;
+}
+ 
+.day {
+  font-size: 30px;
+  top: 15px;
+}
+
+.month {
+  top: 0;
+  left: 0;
+  font-size: 18px;
+}
+
+.year { 
+  top: 19px;
+  right: 0;
+  font-size: 20px;
+  rotation: -90deg !important;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);  
+  }
