@@ -201,7 +201,7 @@ ul#navigation .search a{
 #searchForm {
   background-color:#464646;
   padding:15px 15px 15px;
-  margin:.5em 2em 0;
+  margin:.5em 0em 0;
   position:relative;
 
   -moz-border-radius:16px;
@@ -232,7 +232,7 @@ ul#navigation .search a{
   margin-right:12px;
   outline:medium none;
   padding:0 0 0 35px;
-  width:410px;
+  width:465px;
 
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
@@ -443,5 +443,6 @@ div.events {
   padding: 2em;
   margin-right:5em;
   margin-bottom:1em;
+  margin-top:2em;
   behavior: url(javascript/PIE.htc);
 }
