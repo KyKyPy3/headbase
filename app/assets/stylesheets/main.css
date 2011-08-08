@@ -31,12 +31,12 @@ ul#navigation li a {
   background-repeat:no-repeat;
   background-position:center center;
   border:1px solid #ddd;
-  -moz-border-radius: 11px;
+  -moz-border-radius: 11px 0;
   -webkit-border-bottom-left-radius: 10px;
   -webkit-border-top-left-radius: 10px;
-  -khtml-border-bottom-left-radius: 10px;
-  -khtml-border-top-left-radius: 10px;
-  behavior: url(assets/PIE.htc);
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+  behavior: url(/assets/PIE.htc);
 }
 
 ul#navigation .home a{
@@ -97,8 +97,6 @@ ul#navigation .search a{
   background:#464646;
   border:1px solid #333;
   border-bottom:none;
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
   text-shadow:#000 0 -1px 0;
   position:relative;
   -webkit-background-clip: padding-box;
@@ -106,7 +104,9 @@ ul#navigation .search a{
   -webkit-border-top-left-radius:8px;
   -webkit-border-top-right-radius:8px;
   -moz-border-radius:8px 8px 0 0;
-  behavior: url(javascript/PIE.htc);
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  behavior: url(/assets/PIE.htc);
 }
 
 #menu ul li:before, #menu ul li:after {
@@ -146,7 +146,7 @@ ul#navigation .search a{
   -webkit-border-bottom-right-radius:8px;
   -moz-border-radius-bottomright:8px;
   border-right:1px solid #222;
-  behavior: url(javascript/PIE.htc);
+  behavior: url(/assets/PIE.htc);
 }
 
 #menu ul a:after {
@@ -155,7 +155,7 @@ ul#navigation .search a{
   -webkit-border-bottom-left-radius:8px;
   -moz-border-radius-bottomleft:8px;
   border-left:1px solid #222;
-  behavior: url(javascript/PIE.htc);
+  behavior: url(/assets/PIE.htc);
 }
 
 #menu ul li.current a {
@@ -206,7 +206,7 @@ ul#navigation .search a{
   -moz-border-radius:16px;
   -webkit-border-radius:16px;
   border-radius:16px;
-  behavior: url(javascript/PIE.htc);
+  behavior: url(/assets/PIE.htc);
 	
   zoom: 1;
   filter: alpha(opacity=90);
@@ -231,27 +231,31 @@ ul#navigation .search a{
   margin-right:12px;
   outline:medium none;
   padding:0 0 0 35px;
-  width:510px;
+  width:410px;
 
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
-  behavior: url(javascript/PIE.htc);
+  behavior: url(/assets/PIE.htc);
 }
 
 #submitButton {
-  background:url('img/buttons.png') no-repeat;
+  float:left;
   width:83px;
   height:36px;
-  text-indent:-9999px;
-  overflow:hidden;
-  text-transform:uppercase;
-  border:none;
   cursor:pointer;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background:#F5F5F5;
+  border:1px solid silver;
+  text-shadow:0 -1px 0 #eee;
+  color:#000;
+  padding:4px 10px 5px;
+  font-size:14px;
+  margin:0 5px 0 0;
+  font-weight:bold;
+  behavior: url(/assets/PIE.htc);
 }
 
-#submitButton:hover {
-  background-position:left bottom;
-}
 
 /* 
   Login dialog
