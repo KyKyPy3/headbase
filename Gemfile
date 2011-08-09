@@ -7,6 +7,7 @@ gem 'rails', '3.1.0.rc5'
 
 gem 'sqlite3'
 gem 'rake', '0.8.7'
+gem 'arel', '2.1.4'
 
 
 # Gems used only for assets and not required
@@ -19,7 +20,7 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-gem 'client_side_validations'
+gem 'client_side_validations', '~> 3.1.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
