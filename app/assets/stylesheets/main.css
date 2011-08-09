@@ -72,6 +72,14 @@ ul#navigation .search a{
   clear:both;
 }
 
+.fleft { 
+  float:left;
+}
+
+.fright { 
+  float:right;
+}
+
 /*
 	Main menu style
 */
@@ -789,74 +797,122 @@ h4 {
   border: 1px solid #ddd;
 }
 
+ul.about_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+ul.about_links li {
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  background: #eee;
+  border: 1px solid #ddd;
+  color: #707070;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  padding: 3px 10px 0;
+  position: relative;
+  text-align: left;
+  behavior: url(javascript/PIE.htc);
+}
+
+ul.about_links li em {
+  color: #aaa;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+ul.about_links a {
+  font-style:normal;
+}
+
+.b-img-radius {
+  zoom: 1;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: inline;
+  behavior: url(javascript/PIE.htc);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.b-img-radius img {
+  display: block;
+  visibility: hidden;
+}
+
 /* ============================================================================================================================
-== BUBBLE WITH A BORDER AND TRIANGLE
+== TWITTER
 ** ============================================================================================================================ */
 
-.triangle-border {
-	position:relative;
-	padding:15px;
-	margin:1em 0 .1em;
-	border:3px solid #FF6347;
-	color:#333;
-	background:#fff;
-    min-height: 4em;
+.example-twitter {
+  position:relative;
+  padding:15px;
+  margin:30px 0 0.5em;
+  color:#333;
+  background:#eee;
+  /* css3 */
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  behavior: url(javascript/PIE.htc);	
 }
 
-/* Variant : for left positioned triangle
------------------------------------------- */
-
-.triangle-border.left {
-	margin-left:30px;
+.example-twitter:after {
+  content:"";
+  position:absolute;
+  top:-30px;
+  left:50px;
+  border:15px solid transparent;
+  border-bottom-color:#eee;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
 }
 
-/* THE TRIANGLE
-------------------------------------------------------------------------------------------------------------------------------- */
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.example-twitter + p {padding-left:15px; font:14px Arial, sans-serif;}
 
-.triangle-border:before {
-	content:"";
-	display:block; /* reduce the damage in FF3.0 */
-	position:absolute;
-	bottom:-40px; /* value = - border-top-width - border-bottom-width */
-	left:40px; /* controls horizontal position */
-	width:0;
-	height:0;
-	border:20px solid transparent;
-	border-top-color:#5a8f00;
+div.nerd {
+	-webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    border: 3px solid #ddd;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    padding: 1px 1px 0;
+    position: relative;
+    text-align: left;
+	padding: 1em;
+	behavior: url(javascript/PIE.htc);
 }
 
-/* creates the smaller  triangle */
-.triangle-border:after {
-	content:"";
-	display:block; /* reduce the damage in FF3.0 */
-	position:absolute;
-	bottom:-26px; /* value = - border-top-width - border-bottom-width */
-	left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
-	width:0;
-	height:0;
-	border:13px solid transparent;
-	border-top-color:#fff;
+.iconlist
+{
+  list-style: none;
 }
 
-/* Variant : left
------------------------------------------- */
-
-/* creates the larger triangle */
-.triangle-border.left:before {
-	top:11px; /* controls vertical position */
-	left:-30px; /* value = - border-left-width - border-right-width */
-	bottom:auto;
-	border-width:15px 30px 15px 0;
-	border-style:solid;
-	border-color:transparent #FF6347;
+.iconlist li
+{
+  background-image: url(/assets/list-marker.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 25px;
+  margin: .4em 0;
 }
 
-/* creates the smaller  triangle */
-.triangle-border.left:after {
-	top:15.5px; /* value = (:before top) + (:before border-top) - (:after border-top) */
-	left:-22px; /* value = - border-left-width - border-right-width */
-	bottom:auto;
-	border-width:11px 22px 11px 0;
-	border-style:solid;
-	border-color:transparent #fff;
+.iconlist a {
+    text-decoration:none;
+    color:gray;
+}
+
+.iconlist a:hover {
+	color: #FF4500;
 }

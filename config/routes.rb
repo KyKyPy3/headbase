@@ -1,8 +1,11 @@
 Nerdbase::Application.routes.draw do
+  get "nerds/index"
+
   devise_for :users, :path_names => { :sign_up => "register" }
 
   get "main/index"
   get "main/register"
+  get "about/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

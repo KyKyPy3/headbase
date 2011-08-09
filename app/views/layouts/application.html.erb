@@ -42,7 +42,10 @@
 				</p>
 				</div>
 			<% else %>
-			<div id="topnav" class="topnav"><a href="login" class="signin"><span>Sign in</span></a></div>
+			<% if not current_page?(root_path) %>
+				<div id="topnav" class="topnav" style="float:right;margin-left:1em;"><a href="login" class="register"><span>Register</span></a></div>
+			<% end -%>
+			<div id="topnav" class="topnav" style="float:right;"><a href="login" class="signin"><span>Sign in</span></a></div>
 			<fieldset id="signin_menu">
 				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:id => 'signin' }) do |f| %>
 				  <p><%= f.label :email %>
