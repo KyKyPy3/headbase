@@ -42,37 +42,23 @@
 		<div id="container">
 			<div id="topnav" class="topnav"><a href="login" class="signin"><span>Sign in</span></a></div>
 			<fieldset id="signin_menu">
-				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-				  <p><%= f.label :email %><br />
+				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:id => 'signin' }) do |f| %>
+				  <p><%= f.label :email %>
 				  <%= f.email_field :email %></p>
 
-				  <p><%= f.label :password %><br />
+				  <p ><%= f.label :password %>
 				  <%= f.password_field :password %></p>
 
+				  <p class="remember">
 				  <% if devise_mapping.rememberable? -%>
-				    <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+					<%= f.submit "Sign in", :html => {:id => :signin } %>
+				    <%= f.check_box :remember_me %> <%= f.label :remember_me %>
 				  <% end -%>
-
-				  <p><%= f.submit "Sign in" %></p>
+				  </p>
+				  <p class="forgot">
+				    <%= link_to "Forgot your password?", new_password_path(resource_name) %>
+				  </p>
 				<% end %>
-
-				<%= render :partial => "devise/shared/links" %>
-				<form method="post" id="signin" action="#">
-					<p>
-						<label for="username">User E-mail</label>
-						<input id="username" name="username" value="" title="username" tabindex="4" type="text">
-					</p>
-					<p>
-						<label for="password">Password</label>
-						<input id="password" name="password" value="" title="password" tabindex="5" type="password">
-					</p>
-					<p class="remember">
-						<input id="signin_submit" value="Sign in" tabindex="6" type="submit">
-						<input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
-						<label for="remember">Remember me</label>
-					</p>
-					<p class="forgot"><a href="#" id="resend_password_link">Forgot your password?</a></p>
-				</form>
 			</fieldset>
 			<div id="user_nav">
 				<% if user_signed_in? %>
@@ -80,11 +66,12 @@
 				    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 				  <% end %>
 			</div>
-			<p class="notice"><%= notice %></p>
-			<p class="alert"><%= alert %></p>
 		</div>
 	</div>
 	<div class="clear"></div>
+	
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
 
 <%= yield %>
 
