@@ -8,6 +8,22 @@
 //= require jquery_ujs
 //= require_tree .
 
+function notify(flash_message) 
+  { 
+    // jQuery: reference div, load in message, and fade in 
+    var flash_div = $("#flash") 
+    flash_div.html(flash_message); 
+    flash_div.fadeIn(400); 
+    // use Javascript timeout function to delay calling 
+    // our jQuery fadeOut, and hide 
+    setTimeout(function(){ 
+    flash_div.fadeOut(500, 
+      function(){ 
+        flash_div.html(""); 
+        flash_div.hide()})}, 
+    1400); 
+  }
+
 $(document).ready(function() {
   $('#navigation a').stop().animate({'marginLeft':'85px'},1000);
 
@@ -36,4 +52,13 @@ $(document).ready(function() {
       $("fieldset#signin_menu").hide();
     }
   });
+  
+  $("#flash").hide(); 
+  // grab flash message from our div 
+  var flash_message = $("#flash").html().trim(); 
+  // call our flash display function 
+  if(flash_message != "") 
+  { 
+    notify(flash_message); 
+  } 
 });

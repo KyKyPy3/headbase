@@ -41,12 +41,14 @@
 		</div>
 		<div id="container">
 			<% if user_signed_in? %>
+				<div id="topnav" class="topnav">
 				<p>
 					You are logged as <%= current_user.email %>
 				</p>
 				<p>
 				  <%= link_to('Logout', destroy_user_session_path, :method => 'delete') %>        
 				</p>
+				</div>
 			<% else %>
 			<div id="topnav" class="topnav"><a href="login" class="signin"><span>Sign in</span></a></div>
 			<fieldset id="signin_menu">
@@ -79,8 +81,17 @@
 	</div>
 	<div class="clear"></div>
 	
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<div id="flash" class="flash_html center"> 
+		<% unless flash[:notice].blank? %> 
+			<%= flash[:notice]%> 
+		<% end %> 
+		<% unless flash[:error].blank? %> 
+			<%= flash[:error]%> 
+		<% end %>
+		<% unless flash[:alert].blank? %> 
+			<%= flash[:alert]%> 
+		<% end %>		
+	</div>
 
 <%= yield %>
 
