@@ -19,6 +19,7 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
+gem 'client_side_validations'
 
 # Use unicorn as the web server
 # gem 'unicorn'
