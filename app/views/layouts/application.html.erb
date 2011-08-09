@@ -19,15 +19,7 @@
 			<img src="/assets/nerdbase.png">
 			<img src="/assets/nerdbase3_new.png" style="padding-bottom:1em;">
 		</div>
-		<div class="center" id="menu">
-			<ul>
-				<li class="current"><a href="index_new.html">Home</a></li>
-		  		<li><a href="people_new.html">Nerds</a></li>
-		    	<li><a href="projects_new.html">Ideas</a></li>
-		    	<li><a href="blog_new.html">Blogs</a></li>
-		    	<li><a href="about_new.html">About</a></li>
-			</ul>
-		</div>
+		<%= render "menu" -%>
 	</div>
 	
 	<div class="center">
@@ -81,25 +73,20 @@
 	</div>
 	<div class="clear"></div>
 	
-	<div id="flash" class="flash_html center"> 
-		<% unless flash[:notice].blank? %> 
-			<%= flash[:notice]%> 
-		<% end %> 
-		<% unless flash[:error].blank? %> 
-			<%= flash[:error]%> 
+	<div id="flash" class="flash_html center">
+		<% unless flash[:notice].blank? %>
+			<%= flash[:notice]%>
 		<% end %>
-		<% unless flash[:alert].blank? %> 
-			<%= flash[:alert]%> 
-		<% end %>		
+		<% unless flash[:error].blank? %>
+			<%= flash[:error]%>
+		<% end %>
+		<% unless flash[:alert].blank? %>
+			<%= flash[:alert]%>
+		<% end %>
 	</div>
 
 <%= yield %>
 
-	<div class="footer">
-		<div class="menu">
-			<a href="#">Contact</a><b>|</b><a href="#">Term Of Service</a><b>|</b><a href="#">Privacy</a>
-		</div>
-		<div class="copyright">Copyright 2011 by Nerdbase. All rights reserved.</div>
-	</div>
+	<%= render "footer"%>
 </body>
 </html>
