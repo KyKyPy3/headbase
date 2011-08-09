@@ -40,6 +40,14 @@
 			</form>
 		</div>
 		<div id="container">
+			<% if user_signed_in? %>
+				<p>
+					You are logged as <%= current_user.email %>
+				</p>
+				<p>
+				  <%= link_to('Logout', destroy_user_session_path, :method => 'delete') %>        
+				</p>
+			<% else %>
 			<div id="topnav" class="topnav"><a href="login" class="signin"><span>Sign in</span></a></div>
 			<fieldset id="signin_menu">
 				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:id => 'signin' }) do |f| %>
@@ -66,6 +74,7 @@
 				    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 				  <% end %>
 			</div>
+			<% end %>
 		</div>
 	</div>
 	<div class="clear"></div>
