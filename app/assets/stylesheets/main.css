@@ -910,9 +910,47 @@ div.nerd {
 
 .iconlist a {
     text-decoration:none;
+    font-weight:normal;
     color:gray;
 }
 
 .iconlist a:hover {
 	color: #FF4500;
+}
+
+
+.project_stats {
+  position: relative;
+  width: 300px;
+  font-family: Georgia, serif;
+  color: #999;
+  margin-top:.5em;
+  margin-bottom:.5em;
+  margin-right:.5em;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  behavior: url(javascript/PIE.htc);
+ }
+
+.project_stats:hover {
+	background-color:#F5F5F5;
+}
+ 
+.project_stats .number, .project_stats .name {
+  position: absolute;
+}
+
+.project_stats .number {
+  font-size: 28px;
+  left:10px;
+  width:45px;
+  text-align:center;
+  top: 0px;
+}
+
+.project_stats .name {
+  top: 35px;
+  left: 10px;  
+  font-size: 16px;
 }
