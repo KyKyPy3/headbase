@@ -1,0 +1,71 @@
+<div class="center">
+	<div style="float:left;width:750px;margin-bottom:1em;margin-top:2em;">
+		<div style="text-align:right;padding-right:7em;"><a href="#" class="link">today</a><b style="padding-left:1em;padding-right:1em;">|</b><a href="#" class="link">top 10</a></div>
+		<div style="background:#DCDCDC;height:5px;width:90%;margin-top:.5em;"></div>
+		
+		<% @news.each do |news| %>
+			<div style="padding-top:.5em;margin-top:1em;">
+				<div style="float:left">
+					<div class="date">
+						<span class="day"><%= news.created_at.day -%></span>
+						<span class="month"><%= Date::MONTHNAMES[news.created_at.month][0,3] -%></span>
+						<span class="year"><%= news.created_at.year -%></span>
+					</div>
+				</div>
+				<div style="float:left;">
+					<div style="padding-bottom:.3em;"><%= link_to news.title, news, :style => "font-weight:bold;color:#4682B4;text-decoration:none;font-size:1.4em;text-shadow: 0px 1px 0px #e5e5ee;" %></div>
+					<div class="tags1" style="padding:0;padding-left:5px;padding-right:5px;text-align:center;margin-top:.3em;float:left;">Оставил admin</div>
+				</div>
+				<div style="float:right;margin-right:6.5em;">
+					<%= link_to 'Edit', edit_news_path(news) %>
+				    <%= link_to 'Destroy', news, confirm: 'Are you sure?', method: :delete %>
+				</div>
+				<div class="clear"></div>
+				<div style="margin-bottom:1em;width:650px;"><%= news.body %></div>
+				<div style="height:1px;width:90%;border-bottom:2px dashed silver;margin-top:2em;"></div>
+			</div>
+		<% end %>
+		
+		<br/>
+		
+		<%= link_to 'New News', new_news_path %>
+	</div>
+		<div style="width:250px;;float:right;margin-top:2em;">
+			<h4>Top 10 projects</h4>
+			<div class="hr_x"></div>
+			<ul class="iconlist">
+				<li>
+					<h5 style="padding-bottom:.3em;"><a href="#" class="link1" style="valign:middle;">Система коллективной разработки</a></h5>
+				</li>
+				<li>
+						<h5 style="padding-bottom:.3em;"><a href="#" class="link1">Февраль</a></h5>
+				</li>
+				<li>
+						<h5 style="padding-bottom:.3em;"><a href="#" class="link1">Март</a></h5>
+				</li>
+				<li>
+						<h5 style="padding-bottom:.3em;"><a href="#" class="link1">Апрель</a></h5>
+				</li>
+			</ul>
+			<div style="padding-top:.3em;padding-bottom:2em;"></div>
+			
+			<h4>Latest projects</h4>
+			<div class="hr_x"></div>
+			<ul class="iconlist">
+				<li class="pdf">
+					<h5 style="padding-bottom:.3em;"><a href="#" style="valign:middle;">Computers.</a></h5>
+				</li>
+				<li class="pdf">
+						<h5 style="padding-bottom:.3em;"><a href="#">Web 2.0</a></h5>
+				</li>
+				<li class="pdf">
+						<h5 style="padding-bottom:.3em;"><a href="#">Pellentesque</a></h5>
+				</li>
+				<li class="pdf">
+						<h5 style="padding-bottom:.3em;"><a href="#">Pellentesque sed dolor.</a></h5>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<div class="clear"></div>

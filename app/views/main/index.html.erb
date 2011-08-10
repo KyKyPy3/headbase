@@ -1,28 +1,28 @@
 <div class="center">
-	<div style="float:left;width:700px;margin-bottom:1em;">
+	<div class="leftcol">
 		<div class="events">
-			<div style="float:left;">
-				<div><b style="font-size:22px;">We have propositions for everybody!</b></div>
-				<div style="color:#999;font-weight:normal;margin-top:.3em;">Не упусти свой шанс присоединится к лучшей команде...</div>
+			<div class="fleft">
+				<div><b id="main_lg_hdr">We have propositions for everybody!</b></div>
+				<div id="main_lg_text">Не упусти свой шанс присоединится к лучшей команде...</div>
 			</div>
-			<div style="float:right;padding:.5em;">
+			<div id="main_lg_link">
 				<%= link_to "+1", new_registration_path(resource_name), :id => 'submit' %>
 			</div>
-			<div style="clear:both;"></div>
+			<div class="clear"></div>
 		</div>
-		<div style="margin-bottom:1em;"><img src="/assets/world.png" width="600px;"></div>
-		<div style="width:300px;float:left;margin-right:1.5em;">
-			<div style="float:left;padding-right:.5em;"><img src="/assets/icon2.png" alt="" /></div>
-			<div style="padding-top:.3em;"><h5>Our idea</h5></div>
+		<div id="main_logo"><img src="/assets/world.png" width="600px;"></div>
+		<div class="main_col">
+			<div class="icon"><img src="/assets/icon2.png" alt="" /></div>
+			<div class="hdr"><h5>Our idea</h5></div>
 			<div class="hr_x"></div>
-			<p style="text-align:justify;margin-bottom:2em;">Основная задача этого проекта разработать онлайн систему позволяющую сообществу умных людей работаь над общими проекта. Эта система должна быть простой, легко доступной и самое главное бесплатной. Вся работа ведется пока небольшой группой людей, но мы рады вступлению в наши ряды.</p>
+			<p class="text">Основная задача этого проекта разработать онлайн систему позволяющую сообществу умных людей работаь над общими проекта. Эта система должна быть простой, легко доступной и самое главное бесплатной. Вся работа ведется пока небольшой группой людей, но мы рады вступлению в наши ряды.</p>
 			<a href="#" class="link">Read more</a>
 		</div>
-		<div style="width:300px;float:left;margin-right:1.5em;">
-			<div style="float:left;padding-right:.5em;"><img src="/assets/icon1.png" alt="" /></div>
-			<div style="padding-top:.3em;"><h5>Planning</h5></div>
+		<div class="main_col">
+			<div class="icon"><img src="/assets/icon1.png" alt="" /></div>
+			<div class="hdr"><h5>Planning</h5></div>
 			<div class="hr_x"></div>
-			<p style="text-align:justify;margin-bottom:2em;">Основная задача этого проекта разработать онлайн систему позволяющую сообществу умных людей работаь над общими проекта. Эта система должна быть простой, легко доступной и самое главное бесплатной. Вся работа ведется пока небольшой группой людей, но мы рады вступлению в наши ряды.</p>
+			<p class="text">Основная задача этого проекта разработать онлайн систему позволяющую сообществу умных людей работаь над общими проекта. Эта система должна быть простой, легко доступной и самое главное бесплатной. Вся работа ведется пока небольшой группой людей, но мы рады вступлению в наши ряды.</p>
 			<a href="#" class="link">Read more</a>
 		</div>
 	</div>
@@ -30,53 +30,22 @@
 		<h4>Latest News</h4>
 		<div class="hr_x"></div>
 		<ul class="news">
-			<li>
-				<div class="date">
-					<span class="day">30</span>
-					<span class="month">Jun</span>
-					<span class="year">2009</span>
-				</div>
-				<div class="extra-wrap">
-					<h5><a href="#">Pellentesque sed dolor.</a></h5>
-					<p>Aliquam congue ferme ntum nisl auris accumsan nullavel diam. Sed in lacus ut enim adipis.</p>
-				</div>
-			</li>
-			<li>
-				<div class="date">
-					<span class="day">30</span>
-					<span class="month">Jun</span>
-					<span class="year">2009</span>
-				</div>
-				<div class="extra-wrap">
-					<h5><a href="#">Pellentesque sed dolor.</a></h5>
-					<p>Aliquam congue ferme ntum nisl auris accumsan nullavel diam. Sed in lacus ut enim adipis.</p>
-				</div>
-			</li>
-			<li>
-				<div class="date">
-					<span class="day">30</span>
-					<span class="month">Jun</span>
-					<span class="year">2009</span>
-				</div>
-				<div class="extra-wrap">
-					<h5><a href="#">Pellentesque sed dolor.</a></h5>
-					<p>Aliquam congue ferme ntum nisl auris accumsan nullavel diam. Sed in lacus ut enim adipis.</p>
-				</div>
-			</li>
-			<li>
-				<div class="date">
-					<span class="day">30</span>
-					<span class="month">Jun</span>
-					<span class="year">2009</span>
-				</div>
-				<div class="extra-wrap">
-					<h5><a href="#">Pellentesque sed dolor.</a></h5>
-					<p>Aliquam congue ferme ntum nisl auris accumsan nullavel diam. Sed in lacus ut enim adipis.</p>
-				</div>
-			</li>
+			<% @news.each do |news| %>
+				<li>
+					<div class="date">
+						<span class="day"><%= news.created_at.day -%></span>
+						<span class="month"><%= Date::MONTHNAMES[news.created_at.month][0,3] -%></span>
+						<span class="year"><%= news.created_at.year -%></span>
+					</div>
+					<div class="extra-wrap">
+						<h5><a href="#"><%= news.title -%></a></h5>
+						<p><%= news.body -%></p>
+					</div>
+				</li>
+			<% end %>
 		</ul>
 		<div id="all_news">
-			<a href="#" class="link">View all news</a>
+			<%= link_to "View all news", news_index_path, :class => 'link' %>
 		</div>
 	</div>
 </div>

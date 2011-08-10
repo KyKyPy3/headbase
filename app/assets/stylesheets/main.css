@@ -80,6 +80,70 @@ ul#navigation .search a{
   float:right;
 }
 
+.leftcol {
+  float:left;
+  width:700px;
+  margin-bottom:1em;
+}
+
+.leftcolumn {
+  float:left;
+  width:700px;
+  margin-bottom:1em;
+  margin-top:2em;
+}
+
+#about_speech {
+  width:650px;
+  margin-right:1.5em;
+  padding-bottom:1em;
+}
+
+.main_col {
+  width:300px;
+  float:left;
+  margin-right:1.5em;
+}
+
+.right_column {
+  width:300px;
+  float:right;
+  margin-top:2em;
+}
+
+.main_col .icon {
+  float:left;
+  padding-right:.5em;
+}
+
+.main_col .hdr {
+  padding-top:.3em;
+}
+
+.main_col .text {
+  text-align:justify;
+  margin-bottom:2em;
+}
+
+#main_lg_hdr {
+  font-size:22px;
+}
+
+#main_lg_text {
+  color:#999;
+  font-weight:normal;
+  margin-top:.3em;
+}
+
+#main_lg_link {
+  float:right;
+  padding:.5em;
+}
+
+#main_logo {
+  margin-bottom:1em;
+}
+
 /*
 	Main menu style
 */
@@ -270,7 +334,6 @@ ul#navigation .search a{
   *padding:4px 12px 6px;
   behavior: url(/assets/PIE.htc);
 }
-
 
 /* 
   Login dialog
@@ -500,6 +563,18 @@ div.events {
   color: #FF4500;
 }
 
+.blog_title a {
+  font-weight:bold;
+  color:#4682B4;
+  text-decoration:none;
+  font-size:1.6em;
+  text-shadow: 0px 1px 0px #e5e5ee;
+}
+
+.blog_title a:hover {
+  color: #FF4500;
+}
+
 .news {
   margin-bottom:-5px;
 }
@@ -521,6 +596,17 @@ div.events {
   overflow:hidden;
 }
 
+.extra-wrap p {
+  margin-top:.3em;
+}
+
+.extra-wrap a {
+  font-weight:bold;
+  color:#4682B4;
+  text-decoration:none;
+  text-shadow: 0px 1px 0px #e5e5ee;
+}
+
 .date {
   position: relative;
   width:63px;
@@ -538,7 +624,7 @@ div.events {
  
 .day {
   font-size: 30px;
-  top: 15px;
+  top: 20px;
 }
 
 .month {
@@ -548,7 +634,7 @@ div.events {
 }
 
 .year { 
-  top: 19px;
+  top: 15px;
   right: 0;
   font-size: 20px;
   rotation: -90deg !important;
@@ -750,7 +836,7 @@ h4 {
 
 #user_new p.submit{
   padding-top:2em;
-  text-align:center;
+  margin-left:25em;
 }
 
 #user_new .signin_submit {
