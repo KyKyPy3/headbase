@@ -1,9 +1,9 @@
 <div class="center" id="menu">
   <ul>
     <li <%=raw 'class="current"' if current_page?(root_path) -%> ><%= link_to "Home", root_path, -%></li>
-    <li><a href="people_new.html">Nerds</a></li>
+    <li <%=raw 'class="current"' if current_page?(:controller => 'nerds', :action => 'index') -%>><%= link_to "Nerds", :controller => 'nerds', :action => 'index' -%></li>
     <li><a href="projects_new.html">Ideas</a></li>
-    <li><a href="blog_new.html">Blogs</a></li>
+    <li ><a href="blog_new.html">Blogs</a></li>
     <li <%=raw 'class="current"' if current_page?(:controller => 'about', :action => 'index') -%>><%= link_to "About", :controller => 'about', :action => 'index' -%></li>
   </ul>
 </div>
