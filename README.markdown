@@ -1,3 +1,1 @@
-# http://www.nerdabase.net - World base of nerds
-
-### Создание краудсорсинг портала
+### http://www.headbase.net - World base of professionals
