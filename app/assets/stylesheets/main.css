@@ -954,3 +954,16 @@ div.nerd {
   left: 10px;  
   font-size: 16px;
 }
+
+.tags {
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background:#F5F5F5;
+  border:1px solid #F5F5F5;
+  color:gray;
+  padding:4px 10px 5px;
+  font-size:11px;
+  margin:0 5px 0 0;
+  font-weight:bold;
+  behavior: url(javascript/PIE.htc);
+}

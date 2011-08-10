@@ -3,7 +3,7 @@
     <li <%=raw 'class="current"' if current_page?(root_path) -%> ><%= link_to "Home", root_path, -%></li>
     <li <%=raw 'class="current"' if current_page?(:controller => '/nerds', :action => 'index') -%>><%= link_to "Nerds", :controller => '/nerds', :action => 'index' -%></li>
     <li <%=raw 'class="current"' if current_page?(:controller => '/projects', :action => 'index') -%>><%= link_to "Projects", :controller => '/projects', :action => 'index' -%></li>
-    <li ><a href="blog_new.html">Blogs</a></li>
+    <li <%=raw 'class="current"' if current_page?(:controller => '/blogs', :action => 'index') -%>><%= link_to "Blogs", :controller => '/blogs', :action => 'index' -%></li>
     <li <%=raw 'class="current"' if current_page?(:controller => '/about', :action => 'index') -%>><%= link_to "About", :controller => '/about', :action => 'index' -%></li>
   </ul>
 </div>

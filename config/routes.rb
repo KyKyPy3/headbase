@@ -1,11 +1,7 @@
 Nerdbase::Application.routes.draw do
   devise_for :users, :path_names => { :sign_up => "register" }
-
-  get "nerds/index"
-  get "main/index"
-  get "main/register"
-  get "about/index"
-  get "projects/index"  
+  
+  resources :nerds
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -63,5 +59,5 @@ Nerdbase::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  match ':controller(/:action(/:id(.:format)))'
 end
