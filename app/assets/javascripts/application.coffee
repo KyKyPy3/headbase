@@ -3,20 +3,20 @@ notify = (flash_message) ->
   flash_div.html(flash_message)
   flash_div.fadeIn(400)
 
-  setTimeout(()->
-    flash_div.fadeOut(500, ()->
+  setTimeout(->
+    flash_div.fadeOut(500, ->
       flash_div.html("")
       flash_div.hide()
     )
   , 1400)
 
-$(document).ready () ->
+$(document).ready ->
   $('#navigation a').stop().animate({'marginLeft':'85px'},1000)
 
   $('#navigation > li').hover(
-    () ->
+    ->
       $('a',$(this)).stop().animate({'marginLeft':'10px'},500)
-    () ->
+    ->
       $('a',$(this)).stop().animate({'marginLeft':'85px'},200)
   )
 
