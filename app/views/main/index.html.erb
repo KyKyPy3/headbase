@@ -38,8 +38,8 @@
 						<span class="year"><%= news.created_at.year -%></span>
 					</div>
 					<div class="extra-wrap">
-						<h5><a href="#"><%= news.title -%></a></h5>
-						<p><%= news.body -%></p>
+						<h5><%= link_to news.title, news -%></h5>
+						<p><%= markdown(news.body) -%></p>
 					</div>
 				</li>
 			<% end %>

@@ -91,6 +91,7 @@ GEM
       thor (~> 0.14.6)
     rake (0.8.7)
     rdoc (3.9.1)
+    redcarpet (1.17.2)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -141,6 +142,7 @@ DEPENDENCIES
   pg
   rails (= 3.1.0.rc5)
   rake (= 0.8.7)
+  redcarpet
   rspec-rails
   sass-rails (~> 3.1.0.rc)
   sqlite3
