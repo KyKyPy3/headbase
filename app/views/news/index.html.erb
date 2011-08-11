@@ -21,7 +21,7 @@
 				    <%= link_to 'Destroy', news, confirm: 'Are you sure?', method: :delete, :class => "link" -%>
 				</div>
 				<div class="clear"></div>
-				<div style="margin-bottom:1em;width:650px;"><%= news.body %></div>
+				<div style="margin-bottom:1em;width:650px;"><%= markdown(news.body) %></div>
 				<div style="height:1px;width:90%;border-bottom:2px dashed silver;margin-top:2em;"></div>
 			</div>
 		<% end %>
@@ -29,6 +29,10 @@
 		<br/>
 		
 		<%= link_to 'New News', new_news_path, :class => "link" -%>
+		
+		<br/><br/>
+		
+		<%= will_paginate @news -%>
 	</div>
 		<div style="width:250px;;float:right;margin-top:2em;">
 			<h4>Top 10 projects</h4>

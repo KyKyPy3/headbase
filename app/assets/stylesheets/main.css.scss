@@ -498,7 +498,6 @@ div.events {
   color: black;
   font-size: 1.2em;
   font-weight: bold;
-  padding: 3px 10px 0;
   position: relative;
   text-align: left;
   padding: 2em;
@@ -506,6 +505,22 @@ div.events {
   margin-bottom:1em;
   margin-top:2em;
   @include rounded-corners(11px);
+}
+
+div.blog_entry_info {
+  background: $lite-bg-color;
+  border: 1px solid #ddd;
+  color: gray;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  padding: .3em;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin-bottom:1em;
+  margin-top:1em;
+  @include rounded-corners(4px);
 }
 
 #submit {
@@ -867,7 +882,7 @@ ul.about_links {
   padding: 0 0 20px 0;
 
   li {
-    background: #eee;
+    background: $lite-bg-color;
     border: 1px solid #ddd;
     color: #707070;
     font-size: 1.2em;
@@ -1012,4 +1027,39 @@ div.nerd {
   margin:0 5px 0 0;
   font-weight:bold;
   @include rounded-corners(4px);
+}
+
+
+.pagination {
+  width:90%;
+  background: $lite-bg-color;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: .5em;
+  cursor: default;
+  a, span {
+    padding: 0.2em 0.3em;
+  }
+  .disabled {
+    color: #aaaaaa;
+  }
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    background-color: white;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    border:1px solid #eee;
+    color: #FF4500;
+    @include rounded-corners(1em);
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
 }

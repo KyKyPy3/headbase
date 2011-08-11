@@ -3,8 +3,6 @@
 		<div style="text-align:right;padding-right:7em;"></div>
 		<div style="background:#DCDCDC;height:5px;width:90%;margin-top:.5em;"></div>
 		
-		<div id="notice"><%= notice %></div>
-		
 		<div style="padding-top:.5em;margin-top:1em;">
 			<div style="float:left">
 				<div class="date">
@@ -22,7 +20,7 @@
 			    <%= link_to 'Destroy', @news, confirm: 'Are you sure?', method: :delete, :class => "link" -%>
 			</div>
 			<div class="clear"></div>
-			<div style="margin-bottom:1em;width:650px;"><%= @news.body %></div>
+			<div style="margin-bottom:1em;width:650px;"><%= markdown(@news.body) %></div>
 		</div>
 
 		<%= link_to 'Все новости', news_index_path, :class => "link" %>
