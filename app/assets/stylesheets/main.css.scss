@@ -120,6 +120,10 @@ ul#navigation {
 
   .hdr {
     padding-top:.3em;
+
+    h5 {
+      color: gray;
+    }
   }
 
   .text {
@@ -504,6 +508,19 @@ div.events {
   @include rounded-corners(11px);
 }
 
+div.main_header {
+  background: $lite-bg-color;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  padding: 2em;
+  margin-right:5em;
+  margin-bottom:1em;
+  width:100%;
+  @include rounded-corners(5px);
+}
+
 div.blog_entry_info {
   background: $lite-bg-color;
   border: 1px solid #ddd;
@@ -599,6 +616,10 @@ div.blog_entry_info {
     color:#4682B4;
     text-decoration:none;
     text-shadow: 0px 1px 0px #e5e5ee;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
