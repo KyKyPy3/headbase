@@ -1,7 +1,7 @@
 <div class="center">
-	<div style="float:left;width:750px;margin-bottom:1em;margin-top:2em;">
-		<div style="text-align:right;padding-right:7em;"><a href="#" class="link">today</a><b style="padding-left:1em;padding-right:1em;">|</b><a href="#" class="link">top 10</a></div>
-		<div style="background:#DCDCDC;height:5px;width:90%;margin-top:.5em;"></div>
+	<div style="float:left;width:1000px;margin-bottom:1em;margin-top:2em;">
+		<div style="text-align:right;padding-right:1em;"><a href="#" class="link">today</a><b style="padding-left:1em;padding-right:1em;">|</b><a href="#" class="link">top 10</a></div>
+		<div style="background:#DCDCDC;height:5px;width:100%;margin-top:.5em;"></div>
 		<div style="padding-top:.5em;">
 			<div style="float:left">
 				<div class="project_stats" style="float:left;display:block;width:63px;height:63px;">
@@ -27,46 +27,46 @@
 				<div class="tags" style="padding:0;padding-left:5px;padding-right:5px;text-align:center;margin-top:.8em;float:left;">mathematical</div>
 			</div>
 			<div class="clear"></div>
-			<div style="margin-left:1em;margin-bottom:1em;margin-top:1em;">script.aculo.us is an open-source JavaScript framework for visual effects and.</div>
-			<div style="height:1px;width:90%;border-bottom:2px dashed silver;"></div>
-		</div>
-	</div>
-		<div style="width:250px;;float:right;margin-top:2em;">
-			<h4>Top 10 projects</h4>
-			<div class="hr_x"></div>
-			<ul class="iconlist">
-				<li>
-					<h5 style="padding-bottom:.3em;"><a href="#" class="link1" style="valign:middle;">Система коллективной разработки</a></h5>
-				</li>
-				<li>
-						<h5 style="padding-bottom:.3em;"><a href="#" class="link1">Февраль</a></h5>
-				</li>
-				<li>
-						<h5 style="padding-bottom:.3em;"><a href="#" class="link1">Март</a></h5>
-				</li>
-				<li>
-						<h5 style="padding-bottom:.3em;"><a href="#" class="link1">Апрель</a></h5>
-				</li>
-			</ul>
-			<div style="padding-top:.3em;padding-bottom:2em;"></div>
 			
-			<h4>Latest projects</h4>
-			<div class="hr_x"></div>
-			<ul class="iconlist">
-				<li class="pdf">
-					<h5 style="padding-bottom:.3em;"><a href="#" style="valign:middle;">Computers.</a></h5>
-				</li>
-				<li class="pdf">
-						<h5 style="padding-bottom:.3em;"><a href="#">Web 2.0</a></h5>
-				</li>
-				<li class="pdf">
-						<h5 style="padding-bottom:.3em;"><a href="#">Pellentesque</a></h5>
-				</li>
-				<li class="pdf">
-						<h5 style="padding-bottom:.3em;"><a href="#">Pellentesque sed dolor.</a></h5>
-				</li>
-			</ul>
+			<div id="wrapper">
+				<div id="project_tabs" class="breadCrumb module">
+		          <ul>
+                    <li class="first">
+                        <a href="/projects/tab1">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Biocompare Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Product Discovery</a>
+                    </li>
+                    <li>
+                        <a href="#">Life Science Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Kits and Assays</a>
+                    </li>
+                    <li>
+                        <a href="#">Mutagenesis Kits</a>
+                    </li>
+                    <li class="last">
+                        Mutation Generation
+                    </li>
+                  </ul>
+				</div>
+				<div class="clear"></div>
+				<div id="navigation123">
+				     <ul class="menuUL">
+						 <li><%= link_to content_tag(:span, "General"), {:action => "tab1"}, {:title => "main_content"} -%></li>
+				         <li><a href="#">Repositories</a></li>
+				         <li><a href="#">Members</a></li>
+				         <li><a href="#">Requests</a></li>
+				     </ul>
+					 <div id="main_content"></div>
+				 </div>
+			</div>
 		</div>
 	</div>
+</div>
 
 <div class="clear"></div>

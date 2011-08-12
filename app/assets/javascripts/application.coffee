@@ -40,3 +40,5 @@ $(document).ready ->
   # call our flash display function
   if flash_message != ""
     notify(flash_message)
+  
+  $("#navigation123").tabs()
