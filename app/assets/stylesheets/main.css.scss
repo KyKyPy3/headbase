@@ -1092,22 +1092,22 @@ div.nerd {
 
 
 #wrapper {
-	border: 1px solid #eee;
-	height:585px;
-    overflow:hidden;
-	background: #F5F5F5;
+  border: 1px solid #eee;
+  height:585px;
+  overflow:hidden;
+  background: #F5F5F5;
 }
 
 #main_content {
-    width:100%;
-    height:530px;
-	background: white;
-	margin-top:3em;
+  width:100%;
+  height:530px;
+  background: white;
+  margin-top:3em;
 }
 
 #project_tabs {
-	margin-top:1em;
-    height:20px;
+ margin-top:1em;
+ height:20px;
 }
 
 
@@ -1235,8 +1235,7 @@ div.nerd {
 
 
 .menuUL li{
-	/* This will arrange the LI-s next to each other */
-	display:inline;
+  display:inline;
 }
 
 .menuUL li a,.menuUL li a:visited{
@@ -1480,221 +1479,142 @@ table tbody tr.selected:hover td{
 
 
 .eventList li{
-    background:#f9f9f9;
-    border:1px solid #ddd;
-    list-style:none;
-    margin:5px;
-    padding:4px 7px;
-    
-    /* CSS3 rounded corners */
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
+  background:#f9f9f9;
+  border:1px solid #ddd;
+  list-style:none;
+  margin:5px;
+  padding:4px 7px;
+
+  /* CSS3 rounded corners */
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
 }
 
 .eventList li:hover{
-    cursor:pointer;
-    color: #fff;
-    background: #4682B4; /* old browsers */
-    background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
-    border:1px solid #D4E6EE;
+  cursor:pointer;
+  color: #fff;
+  background: #4682B4; /* old browsers */
+  background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
+  border:1px solid #D4E6EE;
 }
 
-
-
-
-
-
-ul.manager li{
-	background:url("/assets/bg_gradient.gif") repeat-x center bottom #F5F5F5;
-	border:1px solid #DDD;
-	border-top-color:#FFF;
-
-	list-style:none;
-	position:relative;
+.button {
+  outline: 0;
+  padding: 5px 12px;
+  display: block;
+  color: #9fa8b0;
+  font-weight: bold;
+  text-shadow: 1px 1px #1f272b;
+  border: 1px solid white;
+  background:#4682B4;
+  padding:4px 6px 6px;
+  text-decoration:none;
+  font-weight:bold;
+  color:#fff;
+  *padding:4px 12px 6px;
+  *background-position:0 3px!important;
+  @include rounded-corners(4px);
+}
+.button:hover {
+  color: #fff;
+  background: #4682B4; /* old browsers */
+  background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
+}
+.button:active {
+  background-position: 0 top;
+  position: relative;
+  top: 1px;
+  color: #fff;
+  padding: 6px 12px 4px;
+  background: #20282D; /* old browsers */
+  -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
+  -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
+  box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
 }
 
-ul.manager li a{
-	display:block;
-	padding:8px;
-	color: #4682B4;
-	text-decoration: none;
-	
-	&:hover {
-			text-decoration:underline;
-	}
+.vertical-list {
+  list-style: none;
+  padding: 10px;
+  width: 220px;
 }
 
-ul.manager li a:hover{
-	/* When a list is hovered over, show the download green text inside it: */
-	display:block;
-	text-decoration:underline;
+#ts_tabmenu {
+  font-size: 1em;
+  padding: 0px 0px 0px 20px;
+  margin-top:10px;
+}
+#ts_tabmenu ul {
+  line-height: 1em;
+  list-style-type: none;
+  float: left;
+  padding: 0px 0px 0px 5px;
+}
+#ts_tabmenu ul li {
+  float: left;
+}
+#ts_tabmenu ul li a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  padding: 0px 0px 0px 10px;
+  background: url(tabs.gif) no-repeat left top;
+  margin-left: -5px;
+  z-index: 0;
+  position: relative;
+  color: #666666;
+}
+#ts_tabmenu ul li a strong {
+  font-weight: normal;
+  display: block;
+  float: left;
+  background: url(tabs.gif) no-repeat right top;
+  padding: 6px 10px 7px 5px;
+  cursor: pointer;
+}
+#ts_tabmenu ul li a:hover {
+  position: relative;
+  z-index: 5;
+  background: url(tabs.gif) no-repeat left bottom;
+  color: #000000;
+}
+#ts_tabmenu ul li a:hover strong {
+  background-image: url(tabs.gif) no-repeat;
+  position: relative;
+  z-index: 5;
+  background-position: right bottom;
 }
 
+ol {
+  font: italic 18px/20px Georgia, Serif;
+  
+  li {
+    padding: 5px 6px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #eee;
 
+    &:hover {
+      background: #f9f9f9;
+      text-decoration:underline;
+    }
 
+    a {
+      font: 12px/20px Arial, Sans-Serif;
+      color: #47708F;
+      font-weight:bold;
+      text-decoration:none;
+      margin-left:1em;
+      margin-bottom:4em;
+      padding: 5px 0 4px 34px;
+      background: #fff url('/assets/gtk-file.png') no-repeat 0 0;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	.button {
-	    outline: 0;
-	    padding: 5px 12px;
-	    display: block;
-	    color: #9fa8b0;
-	    font-weight: bold;
-	    text-shadow: 1px 1px #1f272b;
-	    border: 1px solid white;
-		background:#4682B4;
-	    padding:4px 6px 6px;
-	    text-decoration:none;
-	    font-weight:bold;
-	    color:#fff;
-	    *padding:4px 12px 6px;
-	    *background-position:0 3px!important;
-	    @include rounded-corners(4px);
-	}
-	.button:hover {
-	    color: #fff;
-	    background: #4682B4; /* old browsers */
-	    background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
-	    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
-	}
-	.button:active {
-	    background-position: 0 top;
-	    position: relative;
-	    top: 1px;
-	    color: #fff;
-	    padding: 6px 12px 4px;
-	    background: #20282D; /* old browsers */
-	    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
-	    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
-	    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
-	}
-
-	
-
-	/* Vertical List: */
-	.vertical-list {
-	    list-style: none;
-	    padding: 10px;
-	    width: 220px;
-	    border-radius: 5px;
-	    -moz-border-radius: 5px;
-	    -webkit-border-radius: 5px;
-	    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
-	    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
-	    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
-	}
-
-
-
-
-
-
-
-
-	#ts_tabmenu {
-		font-size: 1em;
-		padding: 0px 0px 0px 20px;
-		margin-top:10px;
-	}
-	#ts_tabmenu ul {
-		line-height: 1em;
-		margin: 0px;
-		list-style-type: none;
-		float: left;
-		padding: 0px 0px 0px 5px;
-	}
-	#ts_tabmenu ul li {
-		float: left;
-	}
-	#ts_tabmenu ul li a {
-		text-decoration: none;
-		display: block;
-		float: left;
-		padding: 0px 0px 0px 10px;
-		background: url(tabs.gif) no-repeat left top;
-		margin-left: -5px;
-		z-index: 0;
-		position: relative;
-		color: #666666;
-	}
-	#ts_tabmenu ul li a strong {
-		font-weight: normal;
-		display: block;
-		float: left;
-		background: url(tabs.gif) no-repeat right top;
-		padding: 6px 10px 7px 5px;
-		cursor: pointer;
-	}
-	#ts_tabmenu ul li a:hover {
-		position: relative;
-		z-index: 5;
-		background: url(tabs.gif) no-repeat left bottom;
-		color: #000000;
-	}
-	#ts_tabmenu ul li a:hover strong {
-		background-image: url(tabs.gif) no-repeat;  
-		position: relative;
-		z-index: 5;
-		background-position: right bottom;
-	}
-	#tsmenu1 #li_tsmenu1 a, #tsmenu2 #li_tsmenu2 a, 
-	#tsmenu3 #li_tsmenu3 a, #tsmenu4 #li_tsmenu4 a, 
-	#tsmenu5 #li_tsmenu5 a, #tsmenu6 #li_tsmenu6 a, 
-	#tsmenu7 #li_tsmenu7 a {
-		position: relative;
-		z-index: 5; 
-		background: url(tabs.gif) no-repeat left bottom;  
-		color: #000000; 
-	}
-	#tsmenu1 #li_tsmenu1 a strong, #tsmenu2 #li_tsmenu2 a strong, 
-	#tsmenu3 #li_tsmenu3 a strong, #tsmenu4 #li_tsmenu4 a strong, 
-	#tsmenu5 #li_tsmenu5 a strong, #tsmenu6 #li_tsmenu6 a strong, 
-	#tsmenu7 #li_tsmenu7 a strong {	
-		background-image: url(tabs.gif) no-repeat;  
-		position: relative; 
-		z-index: 5; 
-		background-position: right bottom; 
-	}
-
-
-
-
-
-
-	ol {
-		font: italic 18px/20px Georgia, Serif;
-		color: #444;
-		}
-			ol li {
-			padding: 5px 6px;
-			border-top: 1px solid #fff;
-			border-bottom: 1px solid #eee;
-			}
-				ol li:hover {
-				background: #f9f9f9;
-				text-decoration:underline;
-				}
-				ol li a {
-				font: 12px/20px Arial, Sans-Serif;
-				color: #47708F;
-				font-weight:bold;
-				text-decoration:none;
-				margin-left:1em;
-				}
+    a.folder {
+      background: #fff url('/assets/gnome-fs-directory.png') no-repeat 0 0;
+    }
+  }
+}
