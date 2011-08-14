@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  layout "application", :except => [:tab1]
+  layout "application", :except => [:tab1, :tab2, :general]
   
   def index
   end

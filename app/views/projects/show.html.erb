@@ -57,9 +57,9 @@
 				<div class="clear"></div>
 				<div id="navigation123">
 				     <ul class="menuUL">
-						 <li><%= link_to content_tag(:span, "General"), {:action => "tab1"}, {:title => "main_content"} -%></li>
-				         <li><a href="#">Repositories</a></li>
-				         <li><a href="#">Members</a></li>
+						 <li><%= link_to content_tag(:span, "General"), {:action => "general"}, {:title => "main_content"} -%></li>
+						 <li><%= link_to content_tag(:span, "Repositories"), {:action => "tab1"}, {:title => "main_content"} -%></li>
+						 <li><%= link_to content_tag(:span, "Issues"), {:action => "tab2"}, {:title => "main_content"} -%></li>
 				         <li><a href="#">Requests</a></li>
 				     </ul>
 					 <div id="main_content"></div>
