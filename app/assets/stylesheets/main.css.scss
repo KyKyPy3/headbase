@@ -1103,7 +1103,6 @@ div.nerd {
     height:530px;
 	background: white;
 	margin-top:3em;
-	background: #F5F5F5;
 }
 
 #project_tabs {
@@ -1597,7 +1596,6 @@ ul.manager li a:hover{
 	    border-radius: 5px;
 	    -moz-border-radius: 5px;
 	    -webkit-border-radius: 5px;
-	    background: #F5F5F5; /* old browsers */
 	    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
 	    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
 	    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
@@ -1674,3 +1672,28 @@ ul.manager li a:hover{
 		z-index: 5; 
 		background-position: right bottom; 
 	}
+
+
+
+
+
+
+	ol {
+		font: italic 18px/20px Georgia, Serif;
+		color: #444;
+		}
+			ol li {
+			padding: 5px 6px;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #eee;
+			}
+				ol li:hover {
+				background: #f9f9f9;
+				text-decoration:underline;
+				}
+				ol li a {
+				font: 12px/20px Arial, Sans-Serif;
+				color: #47708F;
+				font-weight:bold;
+				text-decoration:none;
+				}
