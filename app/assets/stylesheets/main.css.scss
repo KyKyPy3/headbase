@@ -1103,6 +1103,7 @@ div.nerd {
     height:530px;
 	background: white;
 	margin-top:3em;
+	background: #F5F5F5;
 }
 
 #project_tabs {
@@ -1480,8 +1481,8 @@ table tbody tr.selected:hover td{
 
 
 .eventList li{
-    background:#F4F4F4;
-    border:1px solid #EEEEEE;
+    background:#f9f9f9;
+    border:1px solid #ddd;
     list-style:none;
     margin:5px;
     padding:4px 7px;
@@ -1600,4 +1601,76 @@ ul.manager li a:hover{
 	    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
 	    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
 	    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+	}
+
+
+
+
+
+
+
+
+	#ts_tabmenu {
+		font-size: 1em;
+		padding: 0px 0px 0px 20px;
+		margin-top:10px;
+	}
+	#ts_tabmenu ul {
+		line-height: 1em;
+		margin: 0px;
+		list-style-type: none;
+		float: left;
+		padding: 0px 0px 0px 5px;
+	}
+	#ts_tabmenu ul li {
+		float: left;
+	}
+	#ts_tabmenu ul li a {
+		text-decoration: none;
+		display: block;
+		float: left;
+		padding: 0px 0px 0px 10px;
+		background: url(tabs.gif) no-repeat left top;
+		margin-left: -5px;
+		z-index: 0;
+		position: relative;
+		color: #666666;
+	}
+	#ts_tabmenu ul li a strong {
+		font-weight: normal;
+		display: block;
+		float: left;
+		background: url(tabs.gif) no-repeat right top;
+		padding: 6px 10px 7px 5px;
+		cursor: pointer;
+	}
+	#ts_tabmenu ul li a:hover {
+		position: relative;
+		z-index: 5;
+		background: url(tabs.gif) no-repeat left bottom;
+		color: #000000;
+	}
+	#ts_tabmenu ul li a:hover strong {
+		background-image: url(tabs.gif) no-repeat;  
+		position: relative;
+		z-index: 5;
+		background-position: right bottom;
+	}
+	#tsmenu1 #li_tsmenu1 a, #tsmenu2 #li_tsmenu2 a, 
+	#tsmenu3 #li_tsmenu3 a, #tsmenu4 #li_tsmenu4 a, 
+	#tsmenu5 #li_tsmenu5 a, #tsmenu6 #li_tsmenu6 a, 
+	#tsmenu7 #li_tsmenu7 a {
+		position: relative;
+		z-index: 5; 
+		background: url(tabs.gif) no-repeat left bottom;  
+		color: #000000; 
+	}
+	#tsmenu1 #li_tsmenu1 a strong, #tsmenu2 #li_tsmenu2 a strong, 
+	#tsmenu3 #li_tsmenu3 a strong, #tsmenu4 #li_tsmenu4 a strong, 
+	#tsmenu5 #li_tsmenu5 a strong, #tsmenu6 #li_tsmenu6 a strong, 
+	#tsmenu7 #li_tsmenu7 a strong {	
+		background-image: url(tabs.gif) no-repeat;  
+		position: relative; 
+		z-index: 5; 
+		background-position: right bottom; 
 	}
