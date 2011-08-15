@@ -3,6 +3,7 @@ class RegistrationsController < Devise::RegistrationsController
     if !verify_recaptcha
       flash.delete :recaptcha_error
       build_resource
+      resource.role = "super_admin"
       resource.valid?
       resource.errors.add(:base, "There was an error with the recaptcha code below. Please re-enter the code and click submit.")
       clean_up_passwords(resource)
