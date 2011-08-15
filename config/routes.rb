@@ -1,9 +1,11 @@
 Nerdbase::Application.routes.draw do
+  get "registrations/create"
+
   resources :news
 
   get "news/index"
 
-  devise_for :users, :path_names => { :sign_up => "register" }
+  devise_for :users, :controllers => { :registrations => "registrations" }, :path_names => { :sign_up => "register" }
   
   resources :nerds
 

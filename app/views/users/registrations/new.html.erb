@@ -33,10 +33,10 @@
 					<input type="radio" name="group2" value="Wine" style="margin-left:1em;"> Женский
 				</p>
 				
-				<p class="code">
-					<label for="web">Введите код:</label>
-					<input type="text" name="web" id="web" size="30" />
-				</p>
+				<div style="width:200px;margin-left:19em;">
+					<%= recaptcha_tags :ssl => true, :ajax => true, :display => {:theme => 'clean'} -%>
+				</div>
+				<div class="clear"></div>
 
 			  	<p class="submit"><%= f.submit "Sign up", :class => "signin_submit" %></p>
 			<% end %>

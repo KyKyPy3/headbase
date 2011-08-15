@@ -10,6 +10,7 @@ gem 'rake', '0.8.7'
 gem 'arel', '2.1.4'
 gem 'redcarpet'
 gem 'will_paginate'
+gem "recaptcha", :require => "recaptcha/rails"
 
 # Gems used only for assets and not required
 # in production environments by default.
