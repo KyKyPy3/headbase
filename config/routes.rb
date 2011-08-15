@@ -1,15 +1,8 @@
 Nerdbase::Application.routes.draw do
-  devise_for :admins
-
-  get "registrations/create"
-
   resources :news
-
-  get "news/index"
+  resources :nerds
 
   devise_for :users, :controllers => { :registrations => "registrations" }, :path_names => { :sign_up => "register" }
-  
-  resources :nerds
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
