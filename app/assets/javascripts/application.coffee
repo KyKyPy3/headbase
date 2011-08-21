@@ -41,4 +41,6 @@ $(document).ready ->
   if flash_message != ""
     notify(flash_message)
   
-  $("#navigation123").tabs()
+  $("#tabs").tabs()
+
+  $('#mybutton').badger('5')

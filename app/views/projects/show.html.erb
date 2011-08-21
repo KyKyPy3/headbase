@@ -29,29 +29,29 @@
 			<div class="clear"></div>
 			
 			<div id="wrapper">
-				<div id="project_tabs" class="breadCrumb module">
-		          <ul>
-                    <li class="first">
-                        <a href="/projects/tab1">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">Biocompare Home</a>
-                    </li>
-                    <li class="last">
-                        Mutation Generation
-                    </li>
-                  </ul>
+				<div id="project_tabs" class="breadCrumb1" style="height:33px;">
+					<div id="tabs" class="button-group" style="font-size:.8em;">
+						<ul class="m">
+							<li><%= link_to content_tag(:span, "General"), {:action => "general"}, {:title => "main_content", :class => "but blue icon alarm", :id => "mybutton"} -%></li>
+							<li><%= link_to content_tag(:span, "Browse"), {:action => "browse"}, {:title => "main_content", :class => "but blue icon trend", :id => "mybutton"} -%></li>
+							<li><%= link_to content_tag(:span, "Commits"), {:action => "tab2"}, {:title => "main_content", :class => "but blue icon preferences", :id => "mybutton"} -%></li>
+							<li><a href="#shoppingcart" class="but blue icon shoppingcart">arrowright</a></li>
+							<li><a href="#trend" class="but blue icon trend">arrowup</a></li>
+							<li><a href="#bank" class="but blue icon bank">bank</a></li>
+							<li><a href="#briefcase" class="but blue icon briefcase">briefcase</a></li>
+							<li><a href="#calculator" class="but blue icon calculator">calculator</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="breadCrumb" style="height:22px;">
+					<ul>
+						<li class="first"><a href="/projects/tab1">Home</a></li>
+						<li><a href="#" class="link">Biocompare Home</a></li>
+						<li class="last">Mutation Generation</li>
+					</ul>
 				</div>
 				<div class="clear"></div>
-				<div id="navigation123">
-				     <ul class="menuUL">
-						 <li><%= link_to content_tag(:span, "General"), {:action => "general"}, {:title => "main_content"} -%></li>
-						 <li><%= link_to content_tag(:span, "Browse"), {:action => "browse"}, {:title => "main_content"} -%></li>
-						 <li><%= link_to content_tag(:span, "Requests"), {:action => "tab1"}, {:title => "main_content"} -%></li>
-						 <li><%= link_to content_tag(:span, "Commits"), {:action => "tab2"}, {:title => "main_content"} -%></li>
-				     </ul>
-					 <div id="main_content"></div>
-				 </div>
+				<div id="main_content"></div>
 			</div>
 		</div>
 	</div>
