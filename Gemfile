@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+gem 'rails', '3.1.0.rc6'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'rake', '0.8.7'
-gem 'arel', '2.1.4'
+#gem 'rake', '0.8.7'
+#gem 'arel', '2.1.4'
 gem 'redcarpet'
 gem 'will_paginate'
 gem "recaptcha", :require => "recaptcha/rails"

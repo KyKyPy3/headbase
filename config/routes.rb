@@ -1,6 +1,7 @@
 Nerdbase::Application.routes.draw do
   resources :news
   resources :nerds
+  resources :roles
 
   devise_for :users, :controllers => { :registrations => "registrations" }, :path_names => { :sign_up => "register" }
 
