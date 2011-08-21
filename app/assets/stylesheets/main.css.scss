@@ -1496,6 +1496,7 @@ table tbody tr.selected:hover td{
   list-style:none;
   margin:5px;
   padding:4px 7px;
+  font-size: 12px;
 
   /* CSS3 rounded corners */
   -moz-border-radius:4px;
@@ -1520,11 +1521,11 @@ table tbody tr.selected:hover td{
   color: #9fa8b0;
   font-weight: bold;
   text-shadow: 1px 1px #1f272b;
+  font-size: 16px normal;
   border: 1px solid white;
   background:#4682B4;
   padding:4px 6px 6px;
   text-decoration:none;
-  font-weight:bold;
   color:#fff;
   *padding:4px 12px 6px;
   *background-position:0 3px!important;
@@ -1553,6 +1554,7 @@ table tbody tr.selected:hover td{
   list-style: none;
   padding: 10px;
   width: 220px;
+  font-size: 13px;
 }
 
 ol {  
