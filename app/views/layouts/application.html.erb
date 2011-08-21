@@ -33,13 +33,12 @@
 		</div>
 		<div id="container">
 			<% if user_signed_in? %>
-				<div id="topnav" class="topnav">
-				<p>
-					You are logged as <%= current_user.email %>
-				</p>
-				<p>
-				  <%= link_to('Logout', destroy_user_session_path, :method => 'delete') %>        
-				</p>
+				<div class="users">
+					<div style="float:left;margin-right:.5em;"><img src="/assets/avatar.jpeg" alt="" height="40" width="40"></div>
+					<div style="height:40px;">
+						<div style="font-weight:bold;color:#4682B4;"><%= current_user.email %><div style="float:right;"><%= link_to('Logout', destroy_user_session_path, :method => 'delete', :class => "link") %></div></div>
+						<div style="margin-top:.3em;">You have <a href="#" class="tags_black" style="padding:0;padding-left:5px;padding-right:5px;text-align:center;">12</a> new message</div>
+					</div>
 				</div>
 			<% else %>
 			<% if not current_page?(root_path) %>

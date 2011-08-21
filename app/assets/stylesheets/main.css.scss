@@ -337,13 +337,13 @@ ul#navigation {
   Login dialog
 */
 #container {
-  width:950px;
+  width:990px;
   margin:0 auto;
   position: relative;
 }
 
 #topnav {
-  padding:10px 0px 12px;
+  padding:0px 0px 0px;
   font-size:11px;
   line-height:23px;
   text-align:right;
@@ -501,11 +501,32 @@ div.events {
   font-weight: bold;
   position: relative;
   text-align: left;
-  padding: 2em;
+  padding: 1em;
   margin-right:5em;
   margin-bottom:1em;
   margin-top:2em;
   @include rounded-corners(11px);
+}
+
+div.users {
+  float:right;
+  background: $lite-bg-color;
+  border: 3px solid #ddd;
+  color: black;
+  font-size: 1em;
+  padding: 1em;
+  width:300px;
+  height:38px;
+  margin-top:.5em;
+  @include rounded-corners(8px);
+
+  a {
+    text-decoration: none;
+    
+    &:hover {
+      color: #FF4500;
+    }
+  }
 }
 
 div.main_header {
@@ -694,7 +715,7 @@ div.blog_entry_info {
 }
 
 h5 {
-  font-size:1em;
+  font-size:1.2em;
   line-height:1.38em;
   color:#222226;
 
@@ -1048,6 +1069,20 @@ div.nerd {
   @include rounded-corners(4px);
 }
 
+.tags_black {
+    font-style: normal;
+    font-weight: bold;
+    background-color: white;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5em;
+    border:1px solid #eee;
+    color: black;
+    @include rounded-corners(1em);
+}
+
+
 
 .pagination {
   width:90%;
@@ -1159,7 +1194,6 @@ div.nerd {
   border-top:solid 1px #dedede;
   border-bottom:solid 1px #dedede;
   background:#fff;
-  margin-top:4em;
 }
 .breadCrumb ul
 {
@@ -1512,6 +1546,11 @@ table tbody tr.selected:hover td{
   background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4C5A64), color-stop(4%,#404F5A), color-stop(100%,#2E3940)); /* webkit */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
   border:1px solid #D4E6EE;
+
+  a {
+    color: #FF4500;
+	text-shadow: 1px 1px #1f272b;
+  }
 }
 
 .button {

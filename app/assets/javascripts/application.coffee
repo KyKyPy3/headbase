@@ -44,3 +44,4 @@ $(document).ready ->
   $("#tabs").tabs()
 
   $('#mybutton').badger('5')
+  $('#mybutton3').badger('13')

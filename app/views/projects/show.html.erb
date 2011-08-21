@@ -33,15 +33,24 @@
 					<div id="tabs" class="button-group" style="font-size:.8em;">
 						<ul class="m">
 							<li><%= link_to content_tag(:span, "General"), {:action => "general"}, {:title => "main_content", :class => "but blue icon alarm", :id => "mybutton"} -%></li>
-							<li><%= link_to content_tag(:span, "Browse"), {:action => "browse"}, {:title => "main_content", :class => "but blue icon trend", :id => "mybutton"} -%></li>
-							<li><%= link_to content_tag(:span, "Commits"), {:action => "tab2"}, {:title => "main_content", :class => "but blue icon preferences", :id => "mybutton"} -%></li>
-							<li><%= link_to content_tag(:span, "Commits"), {:action => "tab1"}, {:title => "main_content", :class => "but blue icon shoppingcart", :id => "mybutton"} -%></li>
-							<li><a href="#trend" class="but blue icon trend">arrowup</a></li>
+							<li><%= link_to content_tag(:span, "Browse"), {:action => "browse"}, {:title => "main_content", :class => "but blue icon trend", :id => "mybutton1"} -%></li>
+							<li><%= link_to content_tag(:span, "Commits"), {:action => "tab2"}, {:title => "main_content", :class => "but blue icon preferences", :id => "mybutton2"} -%></li>
+							<li><%= link_to content_tag(:span, "Commits"), {:action => "tab1"}, {:title => "main_content", :class => "but blue icon shoppingcart", :id => "mybutton3"} -%></li>
+							<li><a href="#trend" class="but blue icon trend">Statistics</a></li>
 							<li><a href="#bank" class="but blue icon bank">bank</a></li>
 							<li><a href="#briefcase" class="but blue icon briefcase">briefcase</a></li>
 							<li><a href="#calculator" class="but blue icon calculator">calculator</a></li>
 						</ul>
 					</div>
+				</div>
+				<div style="padding:.5em;height:40px;">
+					<div style="float:left;line-height: 1.5em;height: 1.4em;">Code colaborators:</div>
+					<div class="tags_black" style="padding:0;padding-left:5px;padding-right:5px;text-align:center;float:left;margin-left:5px;margin-right:5px;">12</div>
+					<div style="float:left;margin-left:0em;margin-right:.5em;">|</div>
+					<div style="float:left;line-height: 1.5em;height: 1.4em;">You have </div>
+					<div class="tags_black" style="padding:0;padding-left:5px;padding-right:5px;text-align:center;float:left;margin-left:5px;margin-right:5px;">12</div>
+					<div style="float:left;line-height: 1.5em;height: 1.4em;">forks</div>
+					<div class="clear"></div>
 				</div>
 				<div class="breadCrumb" style="height:22px;">
 					<ul>
