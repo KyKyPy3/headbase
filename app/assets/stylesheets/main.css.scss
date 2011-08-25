@@ -905,8 +905,6 @@ h4 {
 }
 
 #flash {
-  text-align:center;
-  margin-top:1em;
   margin-bottom: 1em;
   background: $lite-bg-color;
   color: black;
@@ -914,6 +912,14 @@ h4 {
   padding-top:.5em;
   padding-bottom:.5em;
   border: 1px solid #ddd;
+  text-align: center;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border:1px solid white;
 }
 
 ul.about_links {

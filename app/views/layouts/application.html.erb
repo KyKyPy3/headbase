@@ -15,8 +15,18 @@
     </ul>
 
 	<div id="header">
-		<div class="center">
-			<img src="/assets/logo.png" style="margin-top:4em;">
+		<div class="center" style="height:7em;background:url(assets/logo.png) no-repeat left bottom;">
+			<div id="flash">
+				<% unless flash[:notice].blank? %>
+					<%= flash[:notice]%>
+				<% end %>
+				<% unless flash[:error].blank? %>
+					<%= flash[:error]%>
+				<% end %>
+				<% unless flash[:alert].blank? %>
+					<%= flash[:alert]%>
+				<% end %>
+			</div>
 		</div>
 		<%= render "menu" -%>
 	</div>
@@ -73,18 +83,6 @@
 		</div>
 	</div>
 	<div class="clear"></div>
-	
-	<div id="flash" class="flash_html center">
-		<% unless flash[:notice].blank? %>
-			<%= flash[:notice]%>
-		<% end %>
-		<% unless flash[:error].blank? %>
-			<%= flash[:error]%>
-		<% end %>
-		<% unless flash[:alert].blank? %>
-			<%= flash[:alert]%>
-		<% end %>
-	</div>
 
 <%= yield %>
 
