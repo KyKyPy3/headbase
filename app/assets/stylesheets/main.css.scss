@@ -1136,7 +1136,7 @@ div.nerd {
   width:998px;
   height:480px;
   background: white;
-  margin-top:13em;
+  margin-top:11.8em;
 }
 
 #project_tabs {
@@ -1668,3 +1668,95 @@ ol {
 #navlist a:hover { color: #f00; }
 
 #navlist ul a:hover { color: #f00 !important; }
+
+
+#blogs a.more,#blogs a.more:visited {
+	text-decoration:none;
+	outline:none;
+	border-bottom:1px dotted #97cae6;
+	color:#4682B4;
+}
+
+
+
+
+
+
+
+
+#feedWidget{
+	float:right;
+	width:130px;
+	position:relative;
+	
+	/* Remains hidden if JS is not enabled: */
+	display:none;
+	z-index:20;
+}
+
+
+#activeTab.hover,.dropDownList{
+	background:url(/assets/toggle_down_light.png) no-repeat 95% 50% #464646;
+	border:1px solid white;
+
+	margin:-1px;
+	
+	cursor:pointer;
+	color:white;
+	
+	/* CSS3 round corners: */
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+#activeTab{
+	color:#777777;
+	cursor:pointer;
+	margin:0 2px 0 0;
+	padding:5px;
+	
+	font:12px Sans-serif;
+	font-weight:bold;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background:white;
+	border:1px solid #eee;
+}
+
+.dropDownList div {
+	font:14px/normal Sans-serif;
+	margin:1px;
+	padding:3px;
+	padding-left:5px;
+	
+	font:12px Sans-serif;
+	font-weight:bold;
+}
+
+.dropDownList{
+	background-image:none;
+	position:absolute;
+
+	border-top:none;
+	padding:5px;
+	
+	/* We reset the roundness of the top corners, inherited by a previous rule: */
+	
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.dropDownList div:hover{
+	background:white;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:black;
+}
