@@ -816,8 +816,6 @@ h4 {
   }
 
   fieldset{
-    margin:0;
-    padding:0;
     border:none;
     padding-bottom:1em;
     font-family: sans-serif; font-size: 14px; color: gray;
@@ -878,7 +876,6 @@ h4 {
     @include rounded-corners(4px);
 
     &::-moz-focus-inner {
-      padding:0;
       border:0;
     }
 
@@ -890,8 +887,6 @@ h4 {
 }
 
 #error_explanation {
-  margin:0;
-  padding:0;
   padding-bottom:2em;
   margin-left:1em;
 
@@ -901,7 +896,6 @@ h4 {
     font-size:14px;
     color:red;
     border:none;
-    padding:0;
   }
 
   ul {
@@ -911,7 +905,6 @@ h4 {
 
 .field_with_errors {
   margin:.5em 30px;
-  padding:0;
 
   input {
     border:1px solid red;
@@ -1217,8 +1210,6 @@ div.nerd {
 }
 .breadCrumb ul
 {
-	margin: 0;
-	padding: 0;
 	height: 21px;
 	display: block;
 }
@@ -1261,7 +1252,6 @@ div.nerd {
 	height: 16px !important;
 	text-indent:-1000em;
 	width:16px;
-	padding: 0;
 	margin-top: 2px;
 	overflow: hidden;
 	background:url(/assets/IconHome.gif) no-repeat;
@@ -1660,8 +1650,6 @@ ol {
 {
   display: inline;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 #navlist a:link, #navlist a:visited
