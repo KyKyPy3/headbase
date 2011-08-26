@@ -58,7 +58,7 @@ function showTab(key)
 	var obj = tabs[key];
 	if(!obj) return false;
 
-	$('#activeTab').text(key);
+	$('#activeTab').text("Branch: " + key);
 }
 
 function showDropDown()
@@ -67,7 +67,7 @@ function showDropDown()
 	
 	if($('#feedWidget .dropDownList').length)
 	{
-		$('.dropDownList').slideUp('fast',function(){ $(this).remove(); })
+		$('.dropDownList').slideUp('normal',function(){ $(this).remove(); })
 		return false;
 	}
 	
@@ -88,5 +88,5 @@ function showDropDown()
 			$('<div>').text(j).appendTo(dropDown);
 	})
 	
-	dropDown.slideDown('fast');
+	dropDown.slideDown('normal');
 }
