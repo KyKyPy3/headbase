@@ -3,6 +3,7 @@ Nerdbase::Application.routes.draw do
   resources :nerds
   resources :roles
   resources :users
+  resource  :profile
 
   devise_for :users, :path_prefix => 'd', :controllers => { :registrations => "registrations" }, :path_names => { :sign_up => "register" }
 
