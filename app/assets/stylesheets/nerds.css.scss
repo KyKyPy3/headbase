@@ -1,3 +1,46 @@
 // Place all the styles related to the nerds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user_details_val {
+  font-size: .8em;
+  color:#808080;
+}
+
+.user_details_links {
+  float:left;
+  font-size: .8em;
+  font-weight:bold;
+  margin-right:.5em;
+}
+
+.user_details {
+  margin-left: 6em;
+  color:#696969;
+  font-weight:normal;
+}
+
+.user_name {
+  font-weight:bold;
+  color:#4682B4;
+  text-decoration:none;
+  font-size:1.2em;
+  text-shadow: 0px 1px 0px #e5e5ee;
+}
+
+.user_name_div {
+  margin-bottom:.4em;
+  margin-left:6em;
+  width:65%;
+  border-bottom:.12em dashed silver;
+}
+
+.avatar {
+  border: 2px solid silver;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+

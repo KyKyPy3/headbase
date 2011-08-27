@@ -1,0 +1,32 @@
+<div class="center">
+  <table id="hor-minimalist-b"> 
+	<thead> 
+		<tr> 
+			<th scope="col" style="text-align:center;width:2em;"><input type="checkbox" id="checkbox-all"></th>
+			<th scope="col">ID</th>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+			<th scope="col">Status</th>
+			<th scope="col">Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |user| %>
+		<tr>
+			<td style="width:3em;"><input type="checkbox" id="checkbox-1"></td>
+			<td style="width:3em;">1</td>
+			<td style="width:15em;vertical-align:top;"><img src="/assets/avatar.jpeg" height="16" width="16" style="border:1px solid #eee;margin-right:.3em;">KyKyPy3</td>
+			<td><%= user.email %></td>
+			<td>admin</td>
+			<td style="width:7em;"><img src="/assets/erase.png" height="20" width="20"><img src="/assets/edit.png" height="20" width="20"><img src="/assets/gnome-fs-directory.png" height="20" width="20"></td>
+		</tr>
+		<% end -%>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="6" style="width:10em;"><%= will_paginate @users -%></td>
+		</tr>
+	</tfoot>
+  </table>
+</div>
+<div class="clear"></div>
