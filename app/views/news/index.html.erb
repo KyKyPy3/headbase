@@ -28,9 +28,12 @@
 			</div>
 		<% end %>
 		
-		<br/>
+		<% if user_signed_in? %>
 		
-		<%= link_to 'New News', new_news_path, :class => "link" -%>
+			<br/>
+		
+			<%= link_to 'New News', new_news_path, :class => "link" -%>
+		<% end -%>
 		
 		<br/><br/>
 		
