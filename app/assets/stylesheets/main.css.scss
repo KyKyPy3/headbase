@@ -2176,22 +2176,6 @@ ol {
   transform:  rotate(2deg) translate(20px,25px) skew(20deg);
 }
 
-.box14_ribbon{
-  position:absolute;
-  top:0; right: 0;
-  width: 130px;
-  height: 40px;
-  border-left: 1px dashed rgba(0, 0, 0, 0.1);
-  border-right: 1px dashed rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
-  box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
-  -webkit-transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
-  -moz-transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
-  -o-transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
-  transform: rotate(6deg) skew(0,0) translate(-60%,-5px);
-}
-
 .bubble {
   clear: both;
   margin: 0px auto;
