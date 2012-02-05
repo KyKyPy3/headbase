@@ -236,7 +236,7 @@ ul#navigation {
     }
 
     &:hover:before, &:hover:after {
-      background:#FFFFFF;
+      background-image: url(/assets/bck.jpg);
       bottom:0;
       -webkit-background-clip: padding-box;
     }
