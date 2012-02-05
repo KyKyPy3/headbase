@@ -2223,54 +2223,17 @@ ol {
   z-index: 90; /* the stack order: displayed under ribbon rectangle (100) */
 }
 
-.bubble h1{
-        text-align: center;
-        position: relative;
-        color: #fff;    
-        margin: 0 -30px 30px -30px;
-        padding: 10px 0; 
-        text-shadow: 0 1px rgba(0,0,0,.8);
-        background: #5c5c5c;
-        background-image: -moz-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
-        background-image: -webkit-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
-    background-image: -o-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
-    background-image: -ms-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
-        background-image: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
-        -moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
-        -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
-        box-shadow: 0 2px 0 rgba(0,0,0,.3);
-        clear: both; // Clear the Folow me on Twitter floating element
-    }
-    
-    .bubble h1:before, h1:after
-    {
-        border-style: solid;
-        border-color: transparent;
-        bottom: -10px;
-    }
-    
-    .bubble h1:before
-    {
-        border-width: 0 10px 10px 0;
-        border-right-color: #222;
-        left: 0;
-    }
-    
-    .bubble h1:after
-    {
-        border-width: 0 0 10px 10px;
-        border-left-color: #222;
-        right: 0;
-    }
-
 .rectangle {
-  background: #7f9db9;
+  background: #5c5c5c;
   height: 50px;
   width: 380px;
   position: relative;
   left:-15px;
   top: 30px;
   float: left;
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
   z-index: 100; /* the stack order: foreground */
 }
 
