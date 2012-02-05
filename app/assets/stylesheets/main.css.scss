@@ -2160,9 +2160,6 @@ ol {
   position:absolute;
   display: inline-block;
   z-index:-1;
-  -webkit-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
   -webkit-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
   -moz-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
   -o-transform: rotate(2deg) translate(-14px,20px) skew(-20deg);
@@ -2177,9 +2174,6 @@ ol {
   position:absolute;
   z-index:-1;
   display: inline-block;
-  -webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
   -webkit-transform: rotate(2deg) translate(20px,25px) skew(20deg);
   -moz-transform:  rotate(2deg) translate(20px,25px) skew(20deg);
   -o-transform:  rotate(2deg) translate(20px,25px) skew(20deg);
