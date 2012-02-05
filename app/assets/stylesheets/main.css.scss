@@ -510,7 +510,7 @@ a.signin {
 }
 
 div.events {
-  background: white;
+  background: $lite-bg-color;
   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
   -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
@@ -520,7 +520,7 @@ div.events {
   position: relative;
   text-align: left;
   padding: 2em;
-  margin-right:4em;
+  margin-right:3.5em;
   margin-bottom:1em;
   margin-top:2em;
   @include rounded-corners(11px);
@@ -2146,9 +2146,6 @@ ol {
   width: 300px;
   padding: 5px 0 ;
   position:relative;
-  background:#fff;
-  background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1,#fff));
-  background: -moz-linear-gradient(0% 0% 270deg, #fff, #fff 10%, #f3f3f3);
   border: 1px solid #ccc;
   -webkit-border-radius: 60px 5px;
   -moz-border-radius: 60px/5px;
