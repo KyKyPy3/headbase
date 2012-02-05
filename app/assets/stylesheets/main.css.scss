@@ -1810,7 +1810,11 @@ ol {
 }
 
 
-
+.box1 p, .box2 p, .box3 p, .box4 p, .box5 p, .box6 p, .box7 p, .box9 p, .box10 p, .box11 p, .box12 p, .box13 p, .box14 p, .box15 p, .box16 p{
+  margin: 30px;
+  color: #aaa;
+  outline: none;
+}
 
 /* This is the selector of the eleventh box, here's where we establish the measures, background colors, borders and shadows */
 .box11{
