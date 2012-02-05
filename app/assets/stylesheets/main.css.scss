@@ -175,10 +175,6 @@ ul#navigation {
 	Main menu style
 */
 
-#menu {
-  background-image: url(/assets/bck.jpg);
-}
-
 #menu ul {
   height:30px;
   background:#959DA5;
@@ -210,7 +206,7 @@ ul#navigation {
     }
 
     &.current a {
-      background:#FFFFFF;
+      background-image: url(/assets/bck.jpg);
       color:#222;
       height:30px;
       text-shadow:#fff 0 1px 0;
