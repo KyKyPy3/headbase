@@ -510,7 +510,6 @@ a.signin {
 }
 
 div.events {
-  background: $lite-bg-color;
   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
   -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
@@ -520,7 +519,7 @@ div.events {
   position: relative;
   text-align: left;
   padding: 2em;
-  margin-right:5em;
+  margin-right:4em;
   margin-bottom:1em;
   margin-top:2em;
   @include rounded-corners(11px);
